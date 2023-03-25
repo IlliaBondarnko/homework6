@@ -178,31 +178,48 @@ header::before {
     color: #212121;
 }
 
-.chmz1 {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1058px;
-    mix-blend-mode: normal;
+.about_list {
+    display: flex;
+    justify-content: center;
 }
 
-.chmz2 {
-    position: absolute;
+.about_list_item {
+    position: relative;
+    width: 370px;
+    list-style: none;
     width: 370px;
     height: 294px;
-    left: 615px;
     top: 1058px;
-    mix-blend-mode: normal;
 }
 
-.chmz3 {
+.about_list_item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.wrapper {
     position: absolute;
+    bottom: 0;
+  
+    padding-top: 27px;
+    padding-bottom: 27px;
+  
     width: 370px;
-    height: 294px;
-    left: 1015px;
-    top: 1058px;
-    mix-blend-mode: normal;
+    height: 70px;
+  
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.about_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
 }
 
 .headline_team {
