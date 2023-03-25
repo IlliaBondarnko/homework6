@@ -1,3 +1,5 @@
+/* ----------HEADER----------------------------------------------------------------- */
+
 .links {
     font-family: 'Roboto';
     font-style: normal;
@@ -41,6 +43,15 @@
     justify-content: space-evenly
 }
 
+.list_item::after {
+    content: "";
+    display: block;
+    margin-top: 42px;
+    width: 48px;
+    height: 4px;
+    background-color: #2196F3;
+}
+
 header::before {
     position: absolute;
     width: 48px;
@@ -52,80 +63,62 @@ header::before {
     border-radius: 2px;
 }
 
-.heroimage {
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-}
+/* -------HERO---------------------------------------------------------------- */
 
 .main_text {
-    position: absolute;
     width: 696px;
     height: 120px;
-    left: 452px;
-    top: 280px;
-
-    font-family: 'Roboto';
+    margin: 0 auto;
+  
+    margin-bottom: 30px;
+  
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-
+  
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    color: #FFFFFF;
+  
+    color: #ffffff;
 }
-
+  
 .button_ {
-    position: absolute;
-    width: 152px;
-    height: 30px;
-    left: 724px;
-    top: 440px;
+    width: 216px;
+    height: 50px;
+  
+    display: block;
+  
+    margin: 0 auto;
+  
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    outline: none;
+    border: none;
 }
-
-
-.button_ {
-  align-items: center;
-  background-color: #2196F3;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.85);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+  
+.hero {
+    background-image: url(./Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-.button_:hover,
-.button_:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.button_:hover {
-  transform: translateY(-1px);
+.overlay {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  
+    width: 1600px;
+  
+    padding-top: 200px;
+    padding-bottom: 200px;
+  
+    background-color: rgba(47, 48, 58, 0.4);
 }
 
 
@@ -151,6 +144,8 @@ header::before {
 
     color: #757575;
 }
+
+/* -------section PEREVAGY------------------------------------------------- */
 
 .perevagy {
     display: flex;
@@ -221,6 +216,8 @@ header::before {
   
     color: #ffffff;
 }
+
+/* ------section TEAM-------------------------------------------------------- */
 
 .headline_team {
     position: absolute;
@@ -315,6 +312,8 @@ header::before {
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+/* -------FOOTER------------------------------------------------------------ */
 
 .websudio_ft {
     font-family: 'Raleway';
